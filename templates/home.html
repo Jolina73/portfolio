@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+{% block title %}<h1 style="text-align: center">Home</h1> {% endblock %}
+
+{% block content %}
+{% for entry in blog_entries %}
+    <h2>{{ entry.title }}</h2>
+    <p>{{ entry.body }}</p>
+{% endfor %}
+
+<h1>Hi, and Welcome!</h1>
+  <h3>Thanks for checking out my portfolio, you're welcome
+      to take a look at my stuff and hit me
+      up if you wanna chat!</h3>
+
+{% endblock %}
+</html>

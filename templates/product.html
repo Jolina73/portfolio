@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block title %}<h1 style="text-align: center;">Product</h1>{% endblock %}
+{% block content %}
+{% for entry in blog_entries %}
+    <h2>{{ entry.title }}</h2>
+    <p>{{ entry.body }}</p>
+{% endfor %}
+
+
+<h3>WAIT FOR IT!</h3>
+{% endblock %}
